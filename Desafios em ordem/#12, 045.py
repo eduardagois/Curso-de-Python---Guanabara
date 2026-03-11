@@ -3,35 +3,34 @@ import random
 print('--' * 6 + 'JOKENPÔ' + '--' * 6)
 print('SERÁ QUE VOCÊ PODE ME VENCER?')
 print('ESCOLHA A SUA JOGADA:')
-jog = str(input('Pedra, papel ou tesoura:')).strip().capitalize()
+jog = str(input('PEDRA, PAPEL OU TESOURA:')).strip().upper()
 
-escolha = ['Pedra', 'Papel', 'Tesoura']
+escolha = ['PEDRA', 'PAPEL', 'TESOURA']
 jogc = random.choice(escolha)
-time.sleep(1)
-print('Sua jogada: {} \n Minha Jogada: {} \n'.format(jog, jogc))
+print('SUA JOGADA: {} \n MINHA JOGADA: {} \n'.format(jog, jogc))
 print('PROCESSANDO...')
 time.sleep(3)
 
 #VITÓRIAS
-if jog == 'Papel' and jogc == 'Pedra':
+if jog == 'PAPEL' and jogc == 'PEDRA':
     print('PARABÉNS, VOCÊ VENCEU!')
-elif jog == 'Pedra' and jogc == 'Tesoura':
+elif jog == 'PEDRA' and jogc == 'TESOURA':
     print('PARABÉNS, VOCÊ VENCEU!')
-elif jog == 'Tesoura' and jogc == 'Papel':
+elif jog == 'TESOURA' and jogc == 'PAPEL':
     print('PARABÉNS, VOCÊ VENCEU!')
 #DERROTAS
-elif jog == 'Papel' and jogc == 'Tesoura':
+elif jog == 'PAPEL' and jogc == 'TESOURA':
     print('QUE PENINHA, VOCÊ PERDEU! XD \n SEJA MELHOR DA PRÓXIMA VEZ')
-elif jog == 'Pedra' and jogc == 'Papel':
+elif jog == 'PEDRA' and jogc == 'PAPEL':
     print('QUE PENINHA, VOCÊ PERDEU! XD \n SEJA MELHOR DA PRÓXIMA VEZ')
-elif jog == 'Tesoura' and jogc == 'Pedra':
+elif jog == 'TESOURA' and jogc == 'PEDRA':
     print('QUE PENINHA, VOCÊ PERDEU! XD \n SEJA MELHOR DA PRÓXIMA VEZ')
 #EMPATES
-elif jog == 'Papel' and jogc == 'Papel':
+elif jog == 'PAPEL' and jogc == 'PAPEL':
     print('PARECE QUE EMPATAMOS...')
-elif jog == 'Pedra' and jogc == 'Pedra':
+elif jog == 'PEDRA' and jogc == 'PEDRA':
     print('PARECE QUE EMPATAMOS...')
-elif jog == 'Tesoura' and jogc == 'Tesoura':
+elif jog == 'TESOURA' and jogc == 'TESOURA':
     print('PARECE QUE EMPATAMOS...')
 else:
     print('ERRO, TENTE NOVAMENTE.')

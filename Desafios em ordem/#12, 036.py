@@ -7,4 +7,3 @@ if prestacao > salario * 0.3:
     print('Não é possível conseguir um empréstimo! \n O valor da prestação da casa de {} R$, num período de {} anos, excedeu 30% do seu salário! \n Já que custou {:.2f} R$!'.format(casa, anos, prestacao))
 else:
     print('O empréstimo será concedido! \n O valor da prestação da casa de {} R$, num período de {} anos, excedeu 30% do seu salário! \n Já que {:.2f} R$!'.format(casa, anos, prestacao))
-
