@@ -9,18 +9,16 @@ print('''''Escolha a forma de pagamento:
 forma = int(input('Qual é a opção?'))
 
 if forma == 1:
-    print('Você recebe um desconto de 10%, passando a pagar R$ {}'.format(preco * 0.9))
+    print('Você recebe um desconto de 10%, passando a pagar R$ {:.2f}'.format(preco * 0.9))
 elif forma == 2:
-    print('Você recebe um desconto de 5%, passando a pagar R$ {}'.format(preco * 0.95))
+    print('Você recebe um desconto de 5%, passando a pagar R$ {:.2f}'.format(preco * 0.95))
 elif forma == 3:
-    parcela == 2:
-        print('Você pagará  R$ {} em {}x no cartão'.format(preco / parcela, parcela))
-    else:
-        print('ERRO \n TENTE NOVAMENTE')
+    parcela = 2
+    print('Você pagará  R$ {:.2f} em {}x no cartão'.format(preco / parcela, parcela))
 elif forma == 4:
     parcela = int(input('Em quantas parcelas?'))
-    print('Você pagará R$ {} em {}x no cartão'.format((preco * 1.2) / parcela, parcela))
-    print('Preço total: R$ {}'.format(preco * 1.2))
+    print('Você pagará R$ {:.2f} em {}x no cartão'.format((preco * 1.2) / parcela, parcela))
+    print('Preço total: R$ {:.2f}'.format(preco * 1.2))
 else:
     print('ERRO. \n TENTE NOVAMENTE')
 print('{:=^40}'.format('OBRIGADO PELA COMPRA!'))
