@@ -1,16 +1,16 @@
-num = int(input('Digite um número inteiro:'))
+print('{:=^40}'.format('VERIFICADOR DE NÚMEROS PRIMOS'))
 cont = 0
-
-for c in range(1, num+1):
+num = int(input('Digite um número inteiro:'))
+for c in range(1, num + 1):
     if num % c == 0:
-        print('\033[34m', end=' ')
+        print('\033[33m {}'.format(c), end=' ')
         cont += 1
     else:
-        print('\033[m', end=' ')
-    print('{}'.format(c), end=' ')
+        print('\033[m {}'.format(c), end=' ')
 
-print('\n\033[m O número {} foi divísivel {} vezes!'.format(num, cont))
+print('\n\033[mO número {} foi divisível \033[33m{}\033[m vezes'.format(num, cont))
 if cont == 2:
-    print('Logo, o número {} é primo!'.format(num))
+    print('\033[mPor isso, ele é PRIMO!')
 else:
-    print('Logo, o número {} não é primo!'.format(num))
+    print('\033[mPor isso, não é PRIMO!')
+print('{:=^40}'.format('FIM DO PROGRAMA'))
